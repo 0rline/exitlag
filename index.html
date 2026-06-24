@@ -42,27 +42,10 @@
         text-shadow: #ff4444 0px 0px 15px, rgba(255,68,68,0.9) 0px 0px 30px, rgba(255,68,68,0.7) 0px 0px 50px, 100px 0 50px 30px rgba(255,255,255,0);
       }
     }
-    @keyframes text-swap {
-      0% { opacity: 1; }
-      5% { opacity: 1; }
-      16.25% { opacity: 1; }
-      21.25% { opacity: 0; }
-      26.25% { opacity: 0; }
-      31.25% { opacity: 1; }
-      38.33% { opacity: 0; }
-      100% { opacity: 0; }
-    }
     .cta-animate-shine {
-      animation: text-swap 40s ease-in-out infinite, shine 2.5s ease-in-out infinite;
+      animation: fade-in-out 40s ease-in-out infinite, shine 2.5s ease-in-out infinite;
       color: #ff4444;
       font-weight: 900;
-    }
-    .text-first {
-      animation: text-swap 40s ease-in-out infinite, shine 2.5s ease-in-out infinite;
-    }
-    .text-second {
-      animation: text-swap 40s ease-in-out infinite, shine 2.5s ease-in-out infinite;
-      animation-delay: -13s;
     }
     .glow-box {
       box-shadow: 0 0 15px #ef4444, 0 0 40px rgba(239,68,68,0.3), inset 0 0 15px rgba(239,68,68,0.1);
@@ -83,13 +66,8 @@
     <p class="text-2xl md:text-3xl tracking-widest uppercase" style="color: #ffffff; font-weight: 700;">10317633</p>
   </div>
   
-  <!-- Texto promocional - Primera línea -->
-  <p class="text-xl text-first" style="letter-spacing: 0.05em; max-width: 280px; line-height: 1.3; position: absolute;">
-    Usa mi código y<br>obtén 51% de<br>descuento
-  </p>
-
-  <!-- Texto promocional - Segunda línea -->
-  <p class="text-xl text-second" style="letter-spacing: 0.05em; max-width: 280px; line-height: 1.3; position: absolute;">
+  <!-- Texto promocional -->
+  <p class="text-xl cta-animate-shine" style="letter-spacing: 0.05em; max-width: 280px; line-height: 1.3;">
     Usa mi código y<br>obtén 51% de<br>descuento
   </p>
 
